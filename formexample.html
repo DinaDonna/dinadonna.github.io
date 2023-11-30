@@ -7,9 +7,10 @@
     <title>Form Class</title>
   </head>
   <body>
-    <h1>Contact Registration</h1>
-    <form action="#" method="get">
-      <>
+    <h1>content Registration</h1>
+    <form action="#submit" method="get">
+      <fieldset>
+        <legend>School Registeration</legend>
         <label>
           First Name: <input type="text" name="First Name" id="First Name" />
         </label>
@@ -22,26 +23,56 @@
         <br />
         <label>
           Phone number:
-          <input type="phone number" name="phone number" id="phone number" />
+          <input type="number" name="phone number" id="phone number" />
         </label>
         <br />
-        <label> Gender:
-        <input type="radio" name=" Gender" id="radio" multiple>
-          <checkbox>Male</checkbox>
-          <br>
-          <input type="radio" >
+        <label>
           
+          Gender:
+        
+          <ul>
+          <input type="radio" name=" Gender" id="radio" multiple />
+          <checkbox>Male</checkbox>
+        
+          <input type="radio" />
 
-          <checkbox>Female</checkbox>  
-              
-      </label>
-      <br>
-      <label> Message:
-     <textarea name=" Message" id=" Message"></textarea>
 
-      </label>
+          <checkbox>Female</checkbox>
+        </ul>
+      
+        </label>
+        <br >
+        <label>
+          Message:
+          <textarea name=" Message" id=" Message"></textarea>
+          <input type="submit" />
+        </label>
+        <br>
+        <br>
+
+        <!--Select Your Best Choice-->
+<label>Schooling</label>
+        <label for="Schooling" id="Schooling">
+          <select>
+            <optgroup label=" Schooling">
+              <option value="none">No Education</option>
+              <option value="some"> High School</option>
+              <option value="lots">University Degree</option>
+            </optgroup>
+          </select>
+          </label>
+
+          <br >
+          <br>
+          <label>Professional</label>
+<select>
+          <optgroup label=" Professional">
+            <option value="self"> Self Learning</option>
+            <option value="Courses"> Courses</option>
+          </optgroup>
+        </select>
+        </label>
       </fieldset>
     </form>
-
   </body>
 </html>
