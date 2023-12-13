@@ -12,7 +12,49 @@
         background-color: aquamarine;
         margin: 2em;
         padding: 2em;
-        color: blue;
+        color: white;
+      }
+      #one {
+        background-color: black;
+        margin: 2em;
+      }
+      #two {
+        background-color: brown;
+        margin: 2em;
+      }
+      #three {
+        background-color: black;
+        margin: 2em;
+      }
+      /*mobile*/
+      main {
+        display: flex;
+        flex-direction: column;
+      }
+      /*Tablet*/
+      @media screen and (min-width: 768px;) {
+        article {
+          line-height: 150%;
+        }
+      }
+      /*Desktop*/
+      @media screen and (min-width: 1024px) main {
+        flex-direction: row;
+        #one {
+          background-color: black;
+          margin: 2em;
+          flex-basis: 25%;
+        }
+        #two {
+          background-color: brown;
+          margin: 2em;
+          flex-basis: 25%;
+        }
+        #three {
+          background-color: black;
+          margin: 2em;
+          flex-basis: 25%;
+        }
       }
     </style>
   </head>
